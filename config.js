@@ -45,7 +45,8 @@ const config = {
         "src": "https://i.ibb.co/s9c90LRv/Chat-GPT-Image-2025-j-l-8-16-36-18.png"
       },
       "paragraphs": [
-        "My approach is built on honesty, transparency, and a keen attention to detail, ensuring a positive experience from start to finish.\n\nI specialize in high-value residential properties, and I’m well-versed in the Ottawa real estate market.\n\nMy clients appreciate my ability to anticipate challenges, identify investment potential, create winning strategies, and deliver results that exceed expectations.\n\nWhether you’re purchasing your first home or selling a long-time family property, I’m dedicated to providing guidance and support every step of the way. Let’s work together to make your real estate dreams a reality!"
+        "My approach is built on honesty, transparency, and a keen attention to detail, ensuring a positive experience from start to finish.\n\nI specialize in high-value residential properties, and I’m well-versed in the Ottawa real estate market.",
+        "My clients appreciate my ability to anticipate challenges, identify investment potential, create winning strategies, and deliver results that exceed expectations.\n\nWhether you’re purchasing your first home or selling a long-time family property, I’m dedicated to providing guidance and support every step of the way. Let’s work together to make your real estate dreams a reality!"
       ]
     }
   },
