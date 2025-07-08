@@ -346,11 +346,14 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Globals Panel
             updatedConfig.globals.companyName = getVal('globalCompanyName');
-            updatedConfig.globals.githubRepoName = getVal('githubRepoName');
             updatedConfig.globals.mainCTAButtonText = getVal('globalMainCTAButtonText');
             updatedConfig.globals.mainCTAButtonURL = getVal('globalMainCTAButtonURL');
             updatedConfig.globals.primaryColor = getVal('globalPrimaryColor');
             updatedConfig.globals.accentColor = getVal('globalAccentColor');
+
+            // GitHub Repo
+            updatedConfig.githubRepo = getVal('githubRepoName');
+            
             // Collect agents dynamically
             document.querySelectorAll('#agentsContainer .dynamic-item-group').forEach((group, index) => {
                 const name = group.querySelector(`#agentName${index}`)?.value;
