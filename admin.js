@@ -283,6 +283,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Globals Panel
         setVal('globalCompanyName', c.globals?.companyName);
+        if (window.githubConfig) {
+            setVal('githubRepoName', window.githubConfig.repoName);
+        }
         setVal('globalMainCTAButtonText', c.globals?.mainCTAButtonText);
         setVal('globalMainCTAButtonURL', c.globals?.mainCTAButtonURL);
         setVal('globalPrimaryColor', c.globals?.primaryColor);
@@ -343,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Globals Panel
             updatedConfig.globals.companyName = getVal('globalCompanyName');
+            updatedConfig.globals.githubRepoName = getVal('githubRepoName');
             updatedConfig.globals.mainCTAButtonText = getVal('globalMainCTAButtonText');
             updatedConfig.globals.mainCTAButtonURL = getVal('globalMainCTAButtonURL');
             updatedConfig.globals.primaryColor = getVal('globalPrimaryColor');
@@ -479,9 +483,10 @@ document.addEventListener('DOMContentLoaded', () => {
             initSideNav();
             configForm.addEventListener('submit', handleFormSubmit);
 
-            // Add event listeners for color pickers
-            document.getElementById('globalPrimaryColorPicker').addEventListener('input', (event) => {
-                document.getElementById('globalPrimaryColor').value = event.target.value;
+ 
+             // Add event listeners for color pickers
+             document.getElementById('globalPrimaryColorPicker').addEventListener('input', (event) => {
+                 document.getElementById('globalPrimaryColor').value = event.target.value;
             });
             document.getElementById('globalPrimaryColor').addEventListener('input', (event) => {
                 document.getElementById('globalPrimaryColorPicker').value = event.target.value;
