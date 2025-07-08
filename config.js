@@ -25,7 +25,7 @@ const config = {
   "header": {
     "tag": "CASE STUDY",
     "title": "How We Helped Busy Professionals Sell Their Ottawa Home for $1,000 Over Asking in Just 24 Hours While Competitors Sat on the Market for 2 Weeks",
-    "subheadline": "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now <a href=\"#\">Generating Top-Dollar Rent</a> in a Tight Market"
+    "subheadline": "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now Generating Top-Dollar Rent in a Tight Market"
   },
   "mainBox": {
     "summary": {
