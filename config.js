@@ -87,7 +87,7 @@ const config = {
     {
       "type": "standard",
       "title": "The Results",
-      "paragraphs": [
+      "listItems": [
         "<strong>SOLD IN 24 HOURS</strong> - while average days on market in their area was 12-14 days",
         "<strong>4 COMPETING OFFERS</strong> generated from 17 showings in the first 24 hours",
         "<strong>$1,000 OVER ASKING PRICE</strong> with completely firm terms (no conditions)",
