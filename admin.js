@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function removeDynamicItem(buttonElement) {
+    window.removeDynamicItem = function(buttonElement) {
         const itemGroup = buttonElement.closest('.dynamic-item-group');
         if (itemGroup) {
             itemGroup.remove();
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return div;
     }
 
-    function addContactDetail(buttonElement, agentIndex) {
+    window.addContactDetail = function(buttonElement, agentIndex) {
         const container = buttonElement.closest('fieldset').querySelector(`#agentContactDetailsContainer${agentIndex}`);
         if (container) {
             const newDetailElement = createContactDetailInputs({ type: 'email', value: '' }, agentIndex, container.children.length);
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return div;
     }
 
-    function addAgent() {
+    window.addAgent = function() {
         addDynamicItem('agentsContainer', { name: '', imageSrc: '', contactDetails: [{ type: 'email', value: '' }] }, createAgentInputs);
     }
 
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return div;
     }
 
-    function addParagraph(containerId) {
+    window.addParagraph = function(containerId) {
         addDynamicItem(containerId, '', (text, index) => createParagraphInput(text, containerId, index));
     }
 
@@ -214,11 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return div;
     }
 
-    function addSection() {
+    window.addSection = function() {
         addDynamicItem('sectionsContainer', { type: 'standard', title: '', paragraphs: [''] }, createSectionInputs);
     }
 
-    function handleSectionTypeChange(selectElement, index) {
+    window.handleSectionTypeChange = function(selectElement, index) {
         const newType = selectElement.value;
         const sectionContentDiv = document.getElementById(`sectionContent${index}`);
         const titleInputGroup = selectElement.closest('.dynamic-item-group').querySelector(`input[id="sectionTitle${index}"]`)?.closest('.form-group');
